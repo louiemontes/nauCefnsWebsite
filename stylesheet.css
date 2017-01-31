@@ -1,0 +1,25 @@
+body {
+	background-color: black;
+}
+
+h2 {
+	dir: rtl;
+	lang: ar;
+	color: green;
+} 
+
+h1 {
+	dir: rtl;
+	lang: ar;
+	color: orange;
+}
+
+body a {
+	dir: rtl;
+	lang: ar;
+	color: green;
+}
+
+p {
+	color:white;
+}
