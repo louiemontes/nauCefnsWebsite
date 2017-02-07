@@ -1,25 +1,61 @@
 body {
-	background-color: black;
+  background-color: black;
+  font-family: Sarif; 
+  text-align: center;
 }
 
 h2 {
-	dir: rtl;
-	lang: ar;
-	color: green;
+  dir: rtl;
+  lang: ar;
+  color: green;
 } 
 
 h1 {
-	dir: rtl;
-	lang: ar;
-	color: orange;
+  dir: rtl;
+  lang: ar;
+  color: orange;
 }
 
 body a {
-	dir: rtl;
-	lang: ar;
-	color: green;
+  dir: rtl;
+  lang: ar;
+  color: green;
 }
 
 p {
-	color:white;
+  color:white;
+}
+
+ul {
+  list-style-type: none;
+  overflow: hidden;
+  background-color: #FF4500;
+}
+
+ol {
+  list-style-type: none;
+  overflow: hidden;
+  background-color: #000000;
+}
+
+.specialUnorderedList li {
+  background-color: #000000;
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a {
+  display: block;
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #300;
+}
+
+.active {
+  background-color: #110000;
 }

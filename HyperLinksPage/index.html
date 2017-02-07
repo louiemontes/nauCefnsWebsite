@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>
+    Home
+  </title>
+  <link type="text/css" rel="stylesheet" href="../stylesheet.css"/>
+  <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+  <style>
+    ul {
+      list-style-type: none;
+      overflow: hidden;
+      background-color: #FF4500;
+    }
+
+    ol {
+      list-style-type: none;
+      overflow: hidden;
+      background-color: #000000;
+    }
+
+    .specialUnorderedList li {
+      background-color: #000000;
+      color: white;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+
+    li a {
+      display: block;
+      color: white;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+
+    li a:hover:not(.active) {
+      background-color: #300;
+    }
+
+    .active {
+      background-color: #110000;
+    }
+  </style>
+</head>
+
+  <body>
+
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#news">News</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <body style="font-family: Sarif; text-align: center">
+        <h1>Luis Montes</h1>
+        <h1>لويس منتس</h1>
+
+        <img src= "images/picOfMe.jpg" style="width:400px;height:300px;">
+
+        <h1>Stay tuned for incoming tech how-tos, javascript games, boardgame reviews, and much more!</h1>
+        <ul>
+            <li><a href="About/index.html">About Me</a></li>
+            <li><a href="LearningSites/index.html">Great Sites For Learning Arabic</a></li>
+        </ul>
+<form style="color: white;">
+  <ol class="specialUnorderedList">
+      <li>
+        First name: <input type="text" name="firstname" value="Mickey">
+      </li>
+      <li>
+        Last name: <input type="text" name="lastname" value="Mouse">
+      </li>
+      <li>
+        Subject: <input type="text" name="subject" value="Your message...">
+      </li>
+
+      <li>
+        <input type="button" onClick="history.go(0)" value="Submit">
+      </li>
+
+      <li>
+      <input type="radio" name="messageType" value="question"> Question
+      </li>
+
+      <li>
+      <input type="radio" name="messageType" value="comment"> Comment
+      </li>
+
+      <li>
+      <input type="radio" name="messageType" value="urgent"> Urgent
+      </li>
+
+      <li>
+        <input type="checkbox" name="wantsAResponse" value="DoesNotWantReponse"> Do You want a response?
+      </li>
+  </ol>
+</form>
+
+    </body>
+
+  </body>
+</html>
