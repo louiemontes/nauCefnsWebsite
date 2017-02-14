@@ -1,61 +1,161 @@
 body {
-  background-color: black;
-  font-family: Sarif; 
-  text-align: center;
+  background-color: #E6DBC7;
+  height: 100em;
+
+/*background: linear-gradient(#256252, #118061, #53c0a2, #b5f6e6);
+*/
+/*background: linear-gradient(black, yellow, orange, red);
+*//*background: linear-gradient(#f0f5f9, #c9d6df, #52606a, #1d2021);
+*//*background: linear-gradient(burlywood, black);
+*/
+
+/*  I experimented with a lot of colors before deciding on a Spanish ceramic color I found at
+  http://www.resene.co.nz/swatches/preview.php?chart=Resene%20Crown%20whites%20range&brand=Resene&name=Half%20Spanish%20White 
+*/
+
 }
 
-h2 {
-  dir: rtl;
-  lang: ar;
-  color: green;
-} 
-
-h1 {
-  dir: rtl;
-  lang: ar;
-  color: orange;
+#pageContainer {
+  position: relative;
 }
 
-body a {
-  dir: rtl;
-  lang: ar;
-  color: green;
+#header {
+  font-family: monospace;
+  position:fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  z-index: 1;
 }
 
-p {
-  color:white;
+#navigationBar {
+  box-shadow: 5px 7px 4px black;
 }
 
-ul {
-  list-style-type: none;
+#navigationBar ul {
+  list-style-type: none; 
   overflow: hidden;
-  background-color: #FF4500;
+  background-color: darkred;
 }
 
-ol {
-  list-style-type: none;
-  overflow: hidden;
-  background-color: #000000;
+#navigationBar li {
+  float: left;
 }
 
-.specialUnorderedList li {
-  background-color: #000000;
-  color: white;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-
-li a {
+#navigationBar li a {
   display: block;
-  color: white;
-  padding: 14px 16px;
+  color: gold;
+  text-align: center;
+  padding: 12px 20px;
   text-decoration: none;
+  transition: 0.3s ease-in;
+
 }
 
-li a:hover:not(.active) {
-  background-color: #300;
+#navigationBar li a:hover:not(.active) {
+  background-color: orange;
+  color: black;
 }
 
-.active {
-  background-color: #110000;
+
+
+#leftSideBar {
+  font-family: monospace;
+  padding-top: 4em;
+  width: 10%;
+}
+
+#leftSideBar ul {
+  list-style-type: none; 
+  overflow: hidden;
+}
+
+#leftSideBar ul a {
+
+  color: gold;
+  text-align: center;
+  text-decoration: none;
+  transition: 0.3s ease-in;
+}
+
+button img {
+  box-shadow: 10px 10px 11px silver;
+  position: relative;
+}
+
+/*#leftSideBar ul li button img {
+  padding-top: 10em;
+}*/
+
+#notificationBar {
+  position:relative;
+}
+
+#notificationBar ul {
+  list-style-type: disc; 
+  overflow: hidden;
+  background-color: darkred;
+  float: left;
+  color: gold;
+  font-size: smaller;
+  box-shadow: 5px 7px 4px black;
+}
+
+
+#mainContent {
+  font-size: larger;
+  position: absolute;
+  top: 30%;
+  left: 20%;
+  padding-bottom: 15em; /*give yourself space to read everything*/
+  color:black;
+  font-family: monospace;
+}
+
+#mainContent a {
+  color: darkred;
+}
+
+#footer {
+  font-family: monospace;
+  position:fixed;
+  top: 90%;
+  left: 0px;
+  width: 100%;
+  z-index: 1;
+}
+
+#contactBar {
+  box-shadow: 5px 7px 4px black;
+}
+
+#contactBar ul {
+  list-style-type: none; 
+  overflow: hidden;
+  background-color: darkred;
+}
+
+#contactBar li {
+  float: left;
+}
+
+#contactBar li a {
+  display: block;
+  color: gold;
+  text-align: center;
+  padding: 12px 20px;
+  text-decoration: none;
+  transition: 0.3s ease-in;
+
+}
+
+#contactBar li a:hover:not(.active) {
+  background-color: orange;
+  color: black;
+}
+
+#specialUnorderedList {
+  color: black;
+  font-family: monospace;
+  list-style-type: none; 
 }

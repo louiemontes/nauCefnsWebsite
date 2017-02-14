@@ -1,0 +1,21 @@
+#mainContainer {
+	padding-left: 10%;
+	padding-right: 10%;
+}
+#contactInformation ul{
+	list-style-type: none; 
+	color: gray;
+	left: 0px;
+}
+
+#catchPhrase {
+	font-family: cursive;
+}
+
+#important {
+	font-weight: bold;
+}
+
+#pdfDownload {
+	text-align: center;
+}
