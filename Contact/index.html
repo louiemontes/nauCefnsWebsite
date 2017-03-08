@@ -1,12 +1,43 @@
+<!-- <!DOCTYPE HTML>
+<html>
+<head>
+<style>
+.error {color: #FF0000;}
+</style>
+</head>
+<body>
+<form action="send.php" method="POST">
+  Name: <input type="text" name="name">
+    <span class="error">*</span>
+  <br>
+  Email to Mesage Back: <input type="text" name="email">
+    <span class="error">*</span>
+  <br>
+  Subject: <input type="text" name="subject">
+    <span class="error">*</span>
+  <br>
+  Body: <input type="text" name="body">
+    <span class="error">*</span>
+  <br>
+
+  <li><input type="radio" name="messageType" value="Question"> Question</li>
+  <li><input type="radio" name="messageType" value="Comment"> Comment</li>
+  <li><input type="radio" name="messageType" value="Urgent"> Urgent</li>
+  <li><input type="checkbox" name="wantsAResponse" value="Yes"> Do You want a response?</li>
+  <input type="submit" name="submit" value="Send!">
+</form>
+</body>
+</html> -->
+
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>
-            Contact Me
-        </title>
-        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
-        <link type="text/css" rel="stylesheet" href="../stylesheet.css"/>
-    </head>    
+<head>
+  <title>
+    Contact
+  </title>
+  <link type="text/css" rel="stylesheet" href="../stylesheet.css"/>
+  <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+</head>
 <script>
 function translateToEnglish(){
   // just reloading the page currently
@@ -19,6 +50,7 @@ function translateToArabic(){
   document.getElementById("mainContent").innerHTML = "<h1>Will translate to Arabic later!</h1>";
 }
 </script>
+
 <body>
   <div id = "pageContainer">
     <div id = "header">
@@ -54,7 +86,6 @@ function translateToArabic(){
         </li>
       </ul>
 
-
       <div id = "notificationBar">
         <ul>
           Notifications
@@ -66,20 +97,31 @@ function translateToArabic(){
     </div>
 
     <div id = "mainContent">
-      <h1>Let me know where I can improve or just say anthing!</h1>
-      <form style="color: white;">
-        <table>
-          <ol id="specialUnorderedList">
-            <li>First name: <input type="text" name="firstname" value="Juan"></li>
-            <li>Last name: <input type="text" name="lastname" value="Montes"></li>
-            <li>Subject: <input type="text" name="subject" value="Your message..."></li>
-            <li><input type="button" onClick="history.go(0)" value="Submit"></li>
-            <li><input type="radio" name="messageType" value="question"> Question</li>
-            <li><input type="radio" name="messageType" value="comment"> Comment</li>
-            <li><input type="radio" name="messageType" value="urgent"> Urgent</li>
-            <li><input type="checkbox" name="wantsAResponse" value="DoesNotWantReponse"> Do You want a response?</li>
-          </ol>
-        </table>
+      <form action="send.php" method="POST">
+        <h1>Say something to me!</h1>
+        Name: <input type="text" name="name">
+        <span class="error">*</span>
+        <br>
+        Your email: <input type="text" name="email">
+        <span class="error">*</span>
+        <br>
+        Subject: <input type="text" name="subject">
+        <span class="error">*</span>
+        <br>
+        <br>
+        <br>
+        Body: <textarea name="body" rows="4" cols="50"></textarea>
+        <span class="error">*</span>
+        <br>
+        <br>
+        <br>
+        <span style="margin-left: 10%;">Message Type:</span>
+        <p><input type="radio" name="messageType" value="Question"> Question<p>
+        <p><input type="radio" name="messageType" value="Comment"> Comment</p>
+        <p><input type="radio" name="messageType" value="Urgent"> Urgent</p>
+        <br>
+        <p><input type="checkbox" name="wantsAResponse" value="Yes"> Do you want a response?</p>
+        <input type="submit" name="submit" value="Send!">
       </form>
     </div>
 
@@ -91,7 +133,7 @@ function translateToArabic(){
           <li><a href="https://twitter.com/louiemontes">Twitter (@louiemontes)</a></li>
           <li><a href="https://github.com/louiemontes">Github (@louiemontes)</a></li>
           <li><a>Skype: evilgorky</a></li>
-          <li><a>Email: lm877@nau.edu</a></li>
+          <li><a href="http://cefns.nau.edu/~lm877/Contact/index.html">Email: lm877@nau.edu</a></li>
         </ul>
       </div>
     </div>
