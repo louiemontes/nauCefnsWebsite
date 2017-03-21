@@ -62,7 +62,7 @@ if(empty($_POST["wantsAResponse"])) {
 if($nameCheck === "1" && $emailCheck==="1" && $subjectCheck==="1" && $bodyCheck==="1") {
   $date = date("d/m/Y");
   $time = date("h:i:sa");
-  $body = "From: " . $email . "\n" . "Message Type: " . $messageType . "\n" . "\n" . $body . "\n" . "\n"
+  $body = "From: " . $email . "\n" . "Name: " . $name . "\n" . "Message Type: " . $messageType . "\n" . "\n" . $body . "\n" . "\n"
   . "---Apache Server is in Flagstaff, Arizona, USA---" . "\n"
   . "Server date: " . $date . "\n" . "Server time: " . $time . "\n"
   . "Wants a response: " . $wantsAResponse . "\n";
