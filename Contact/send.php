@@ -52,12 +52,12 @@ $to = "lm877@nau.edu";
 //   $bodyCheck="1";
 // }
 
-// //wants a response checks
-// if(empty($_POST["wantsAResponse"])) {
-//   $wantsAResponse = "No";
-// } else {
-//   $wantsAResponse = "Yes";
-// }
+//wants a response checks
+if(empty($_POST["wantsAResponse"])) {
+  $wantsAResponse = "No";
+} else {
+  $wantsAResponse = "Yes";
+}
 
 
 // if($nameCheck === "1" && $emailCheck==="1" && $subjectCheck==="1" && $bodyCheck==="1") {
