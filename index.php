@@ -1,5 +1,5 @@
 <?php
-  session_start();
+  session_start(); //every page needs this
 ?>
 
 <!DOCTYPE html>
