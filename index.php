@@ -1,3 +1,7 @@
+<?php
+  session_start();
+?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -25,11 +29,20 @@ function translateToArabic(){
     <div id = "header">
       <div id = "navigationBar">
         <ul>
-          <li><a href="OldHomePage/index.html">Old Home Page</a></li>
-          <li><a href="About/index.html">About Me</a></li>
-          <li><a href="Contact/index.html">Contact</a></li>
-          <li><a href="LearningSites/index.html">Great Sites For Learning Arabic</a></li>
-          <li><a href="Resume/index.html" target="_blank">Résumé</a></li>
+          <li><a href="/~lm877/OldHomePage/index.php">Old Home Page</a></li>
+          <li><a href="/~lm877/About/index.php">About Me</a></li>
+          <li><a href="/~lm877/Contact/index.php">Contact</a></li>
+          <li><a href="/~lm877/LearningSites/index.php">Great Sites For Learning Arabic</a></li>
+          <li><a href="/~lm877/Resume/index.php" target="_blank">Résumé</a></li>
+        <?php 
+        if (!isset($_SESSION['uid'])) {
+          echo "<li><a href='/~lm877/phpInteractivity/users.php'>Login</a></li>";
+        } else {
+          echo "<li><a href='/~lm877phpInteractivity/users.php'>Logout</a></li>";
+        echo "<li><a href='/~lm877/phpInteractivity/messanger.php'>Messanger</a></li>";
+        echo "<li><a href='/~lm877/phpInteractivity/inbox.php'>Inbox</a></li>";
+        }
+        ?>
         </ul>
       </div>
     </div>

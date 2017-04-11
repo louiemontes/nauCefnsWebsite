@@ -1,33 +1,6 @@
-<!-- <!DOCTYPE HTML>
-<html>
-<head>
-<style>
-.error {color: #FF0000;}
-</style>
-</head>
-<body>
-<form action="send.php" method="POST">
-  Name: <input type="text" name="name">
-    <span class="error">*</span>
-  <br>
-  Email to Mesage Back: <input type="text" name="email">
-    <span class="error">*</span>
-  <br>
-  Subject: <input type="text" name="subject">
-    <span class="error">*</span>
-  <br>
-  Body: <input type="text" name="body">
-    <span class="error">*</span>
-  <br>
-
-  <li><input type="radio" name="messageType" value="Question"> Question</li>
-  <li><input type="radio" name="messageType" value="Comment"> Comment</li>
-  <li><input type="radio" name="messageType" value="Urgent"> Urgent</li>
-  <li><input type="checkbox" name="wantsAResponse" value="Yes"> Do You want a response?</li>
-  <input type="submit" name="submit" value="Send!">
-</form>
-</body>
-</html> -->
+<?php
+  session_start();
+?>
 
 <!DOCTYPE html>
 <html>
@@ -56,12 +29,22 @@ function translateToArabic(){
     <div id = "header">
       <div id = "navigationBar">
         <ul>
-          <li><a href="../index.html">Home Page</a></li>
-          <li><a href="../About/index.html">About Me</a></li>
-          <li><a href="../Contact/index.html">Contact</a></li>
-          <li><a href="../LearningSites/index.html">Great Sites For Learning Arabic</a></li>
-          <li><a href="../Resume/index.html" target="_blank">Résumé</a></li>
+          <li><a href="../../~lm877/index.php">Home Page</a></li>
+          <li><a href="../About/index.php">About Me</a></li>
+          <li><a href="../Contact/index.php">Contact</a></li>
+          <li><a href="../LearningSites/index.php">Great Sites For Learning Arabic</a></li>
+          <li><a href="../Resume/index.php" target="_blank">Résumé</a></li>
+        <?php 
+        if (!isset($_SESSION['uid'])) {
+          echo "<li><a href='../phpInteractivity/users.php'>Login</a></li>";
+        } else {
+          echo "<li><a href='../phpInteractivity/users.php'>Logout</a></li>";
+        echo "<li><a href='../phpInteractivity/messanger.php'>Messanger</a></li>";
+        echo "<li><a href='../phpInteractivity/inbox.php'>Inbox</a></li>";
+        }
+        ?>
         </ul>
+
       </div>
     </div>
 
