@@ -14,8 +14,8 @@ body {
 */
 
 }
-.error {color: #FF0000;}
-
+/*.error {color: #FF0000;}
+*/
 #pageContainer {
   position: relative;
 }
@@ -159,4 +159,9 @@ button img {
   color: black;
   font-family: monospace;
   list-style-type: none; 
+}
+
+.err {
+  color: red;
+  font-family: sans-serif;
 }
