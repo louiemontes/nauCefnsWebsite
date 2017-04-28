@@ -7,4 +7,5 @@ Update visual site enhancements
 Update login system + improved non-logged in messaging system
 
 :check: Will try sonarqube testing
-\n Will try fixing sonarqube errors
+
+Will try fixing sonarqube errors
